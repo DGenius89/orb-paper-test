@@ -1,0 +1,46 @@
+{
+ "mode": "dev",
+ "rules": {
+  "min_value": 25000,
+  "window_days": 30,
+  "min_insiders": 2,
+  "cooldown_days": 90,
+  "min_price": 5.0,
+  "min_dollar_vol": 1000000,
+  "hold_days": 63,
+  "cost_bps": 20,
+  "slots": 20
+ },
+ "signals": 7314,
+ "skipped": {
+  "te klein/goedkoop": 2048,
+  "geen koersdata": 1084
+ },
+ "events": {
+  "trades": 4182,
+  "mean_net_pct": 3.65,
+  "mean_excess_vs_spy_pct": -0.95,
+  "median_excess_pct": -2.32,
+  "t_stat": -2.42,
+  "beat_spy_pct": 44.0
+ },
+ "portfolio": {
+  "from": "2016-03-01",
+  "to": "2023-12-29",
+  "total_return_pct": 7.91,
+  "cagr_pct": 0.98,
+  "vol_pct": 27.79,
+  "sharpe": 0.18,
+  "max_drawdown_pct": 63.51
+ },
+ "spy": {
+  "from": "2016-03-01",
+  "to": "2023-12-29",
+  "total_return_pct": 173.6,
+  "cagr_pct": 13.73,
+  "vol_pct": 17.99,
+  "sharpe": 0.81,
+  "max_drawdown_pct": 33.79
+ },
+ "verdict": "FAIL"
+}
