@@ -1,0 +1,66 @@
+{
+ "period": [
+  "2025-11-10",
+  "2026-11-10"
+ ],
+ "symbols": 40,
+ "signals": 5712,
+ "split_date": "2026-07-15",
+ "all_net": {
+  "trades": 756,
+  "total": -2253.22,
+  "per_trade": -2.98,
+  "win_rate": 47.5,
+  "profit_factor": 0.83,
+  "avg_r": -0.106,
+  "max_drawdown": 2657.14,
+  "exits": {
+   "stop": 333,
+   "target": 307,
+   "close": 116
+  }
+ },
+ "all_gross": {
+  "trades": 756,
+  "total": -716.88,
+  "per_trade": -0.95,
+  "win_rate": 48.1,
+  "profit_factor": 0.94,
+  "avg_r": -0.106,
+  "max_drawdown": 1391.82,
+  "exits": {
+   "stop": 333,
+   "target": 307,
+   "close": 116
+  }
+ },
+ "in_sample_net": {
+  "trades": 504,
+  "total": -996.55,
+  "per_trade": -1.98,
+  "win_rate": 49.0,
+  "profit_factor": 0.89,
+  "avg_r": -0.078,
+  "max_drawdown": 1364.02,
+  "exits": {
+   "stop": 220,
+   "target": 218,
+   "close": 66
+  }
+ },
+ "out_of_sample_net": {
+  "trades": 252,
+  "total": -1256.67,
+  "per_trade": -4.99,
+  "win_rate": 44.4,
+  "profit_factor": 0.73,
+  "avg_r": -0.161,
+  "max_drawdown": 1566.63,
+  "exits": {
+   "close": 50,
+   "stop": 113,
+   "target": 89
+  }
+ },
+ "spy_buy_hold_usd": 536.66
+}
