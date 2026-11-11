@@ -1,0 +1,62 @@
+{
+ "buy_hold_spy": {
+  "from": "2017-01-03",
+  "to": "2025-11-10",
+  "total_return_pct": 246.12,
+  "cagr_pct": 15.09,
+  "vol_pct": 18.28,
+  "sharpe": 0.86,
+  "max_drawdown_pct": 33.79,
+  "switches_per_year": 0.1
+ },
+ "ma_20_50": {
+  "from": "2017-01-03",
+  "to": "2025-11-10",
+  "total_return_pct": 130.38,
+  "cagr_pct": 9.91,
+  "vol_pct": 11.71,
+  "sharpe": 0.87,
+  "max_drawdown_pct": 27.66,
+  "switches_per_year": 6.8
+ },
+ "ma_50_200": {
+  "from": "2017-01-03",
+  "to": "2025-11-10",
+  "total_return_pct": 135.07,
+  "cagr_pct": 10.16,
+  "vol_pct": 15.32,
+  "sharpe": 0.71,
+  "max_drawdown_pct": 33.79,
+  "switches_per_year": 1.4
+ },
+ "trend_spy": {
+  "from": "2017-01-03",
+  "to": "2025-11-10",
+  "total_return_pct": 113.2,
+  "cagr_pct": 8.95,
+  "vol_pct": 12.56,
+  "sharpe": 0.75,
+  "max_drawdown_pct": 25.1,
+  "switches_per_year": 2.8
+ },
+ "spy_60_cash_40": {
+  "from": "2017-01-03",
+  "to": "2025-11-10",
+  "total_return_pct": 134.51,
+  "cagr_pct": 10.13,
+  "vol_pct": 10.82,
+  "sharpe": 0.95,
+  "max_drawdown_pct": 21.0,
+  "switches_per_year": 0.2
+ },
+ "spy_75_cash_25": {
+  "from": "2017-01-03",
+  "to": "2025-11-10",
+  "total_return_pct": 172.64,
+  "cagr_pct": 12.02,
+  "vol_pct": 13.59,
+  "sharpe": 0.9,
+  "max_drawdown_pct": 25.92,
+  "switches_per_year": 0.2
+ }
+}
