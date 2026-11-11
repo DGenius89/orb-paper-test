@@ -1,0 +1,11 @@
+name: probe
+on:
+  workflow_dispatch:
+    inputs:
+      q: { default: "2016q1" }
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python tools/probe_sec.py ${{ inputs.q }} && python tools/probe_sec.py 2026q3
