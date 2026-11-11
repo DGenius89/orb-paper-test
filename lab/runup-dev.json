@@ -1,0 +1,151 @@
+{
+ "mode": "dev",
+ "rules": {
+  "lead_days": 30,
+  "min_price": 3.0,
+  "min_dvol": 1000000,
+  "max_dvol": 200000000,
+  "cooldown_days": 60,
+  "cost_bps": 30
+ },
+ "events": 1036,
+ "matched": 233,
+ "match_rate_pct": 22.5,
+ "after_cooldown": 192,
+ "skipped": {
+  "te klein of te groot": 94,
+  "geen koersdata": 15,
+  "koers < $3": 3
+ },
+ "by_kind": {
+  "approval": 80,
+  "crl": 0
+ },
+ "net": {
+  "n": 80,
+  "mean_pct": 2.36,
+  "median_pct": 0.67,
+  "t_stat": 1.23,
+  "positive_pct": 52.5
+ },
+ "excess_vs_xbi": {
+  "n": 80,
+  "mean_pct": 2.51,
+  "median_pct": 2.04,
+  "t_stat": 1.44,
+  "positive_pct": 53.8
+ },
+ "excess_vs_spy": {
+  "n": 80,
+  "mean_pct": 1.22,
+  "median_pct": 0.25,
+  "t_stat": 0.66,
+  "positive_pct": 50.0
+ },
+ "crl_only_excess_vs_xbi": {
+  "n": 0
+ },
+ "top_unmatched_sponsors": [
+  [
+   "AZURITY",
+   18
+  ],
+  [
+   "GENENTECH INC",
+   18
+  ],
+  [
+   "HIKMA",
+   15
+  ],
+  [
+   "FRESENIUS KABI USA",
+   14
+  ],
+  [
+   "EXELA PHARMA",
+   10
+  ],
+  [
+   "SUN PHARM",
+   10
+  ],
+  [
+   "BAXTER HLTHCARE CORP",
+   10
+  ],
+  [
+   "VIIV HLTHCARE",
+   9
+  ],
+  [
+   "GLAXOSMITHKLINE",
+   9
+  ],
+  [
+   "JANSSEN BIOTECH",
+   9
+  ],
+  [
+   "MAYNE PHARMA",
+   9
+  ],
+  [
+   "ACCORD HLTHCARE",
+   8
+  ],
+  [
+   "ALMATICA",
+   7
+  ],
+  [
+   "ASTELLAS",
+   7
+  ],
+  [
+   "HOSPIRA",
+   7
+  ],
+  [
+   "BRISTOL",
+   6
+  ],
+  [
+   "CMP DEV LLC",
+   6
+  ],
+  [
+   "BAUSCH AND LOMB INC",
+   6
+  ],
+  [
+   "NOVO",
+   6
+  ],
+  [
+   "SUMITOMO PHARMA AM",
+   5
+  ],
+  [
+   "HARROW EYE",
+   5
+  ],
+  [
+   "AM REGENT",
+   5
+  ],
+  [
+   "ALCON LABS INC",
+   5
+  ],
+  [
+   "BOEHRINGER INGELHEIM",
+   5
+  ],
+  [
+   "SAMSUNG BIOEPIS CO LTD",
+   5
+  ]
+ ],
+ "verdict": "FAIL"
+}
