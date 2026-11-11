@@ -1,0 +1,27 @@
+name: lab
+on:
+  workflow_dispatch:
+    inputs:
+      mode: { description: "dev of final", default: "dev" }
+      ideas: { description: "alleen bij final: ideeën uit lab/dev.json to_final, komma-gescheiden", default: "" }
+permissions:
+  contents: write
+jobs:
+  lab:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: python runner/lab.py ${{ inputs.mode }} --ideas "${{ inputs.ideas }}"
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+      - run: |
+          git config user.name "paper-bot"
+          git config user.email "paper-bot@users.noreply.github.com"
+          git add lab
+          git diff --cached --quiet || git commit -m "Lab ${{ inputs.mode }} $(date -u +%F)"
+          git pull --rebase -q origin main
+          git push

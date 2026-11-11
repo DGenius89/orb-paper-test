@@ -51,13 +51,13 @@ def trade(method, path, params=None, body=None):
     return call(method, PAPER, path, params, body)
 
 
-def bars(symbols, start, end, timeframe="5Min", feed="iex"):
+def bars(symbols, start, end, timeframe="5Min", feed="iex", adjustment="raw"):
     """{symbol: [bar dicts in ET]} over [start, end), paginated."""
     out = {s: [] for s in symbols}
     token = None
     while True:
         p = {"symbols": ",".join(symbols), "timeframe": timeframe, "start": start, "end": end,
-             "feed": feed, "limit": 10000, "adjustment": "raw"}
+             "feed": feed, "limit": 10000, "adjustment": adjustment}
         if token:
             p["page_token"] = token
         r = call("GET", DATA, "/v2/stocks/bars", p)
