@@ -1,0 +1,77 @@
+{
+ "variant": "stocks in play",
+ "selection": {
+  "min_price": 5.0,
+  "min_adv": 1000000,
+  "adv_days": 14,
+  "min_gap_pct": 2.0,
+  "gappers": 50,
+  "in_play": 20
+ },
+ "feed": "sip",
+ "period": [
+  "2025-11-10",
+  "2026-11-10"
+ ],
+ "universe": 12674,
+ "signals": 1278,
+ "split_date": "2026-07-15",
+ "all_net": {
+  "trades": 662,
+  "total": -1158.95,
+  "per_trade": -1.75,
+  "win_rate": 48.9,
+  "profit_factor": 0.92,
+  "avg_r": -0.049,
+  "max_drawdown": 1705.44,
+  "exits": {
+   "stop": 276,
+   "target": 276,
+   "close": 110
+  }
+ },
+ "all_gross": {
+  "trades": 662,
+  "total": -86.5,
+  "per_trade": -0.13,
+  "win_rate": 49.4,
+  "profit_factor": 0.99,
+  "avg_r": -0.049,
+  "max_drawdown": 1036.35,
+  "exits": {
+   "stop": 276,
+   "target": 276,
+   "close": 110
+  }
+ },
+ "in_sample_net": {
+  "trades": 448,
+  "total": -403.46,
+  "per_trade": -0.9,
+  "win_rate": 49.8,
+  "profit_factor": 0.96,
+  "avg_r": -0.03,
+  "max_drawdown": 1070.84,
+  "exits": {
+   "stop": 186,
+   "target": 194,
+   "close": 68
+  }
+ },
+ "out_of_sample_net": {
+  "trades": 214,
+  "total": -755.49,
+  "per_trade": -3.53,
+  "win_rate": 47.2,
+  "profit_factor": 0.84,
+  "avg_r": -0.089,
+  "max_drawdown": 1301.98,
+  "exits": {
+   "stop": 90,
+   "close": 42,
+   "target": 82
+  }
+ },
+ "spy_buy_hold_usd": 536.63,
+ "verdict": "FAIL"
+}
