@@ -1,0 +1,69 @@
+{
+ "period": [
+  "2017-01-03",
+  "2025-11-11"
+ ],
+ "results": {
+  "buy_hold_spy": {
+   "from": "2017-01-03",
+   "to": "2025-11-10",
+   "total_return_pct": 246.12,
+   "cagr_pct": 15.09,
+   "vol_pct": 18.28,
+   "sharpe": 0.86,
+   "max_drawdown_pct": 33.79,
+   "turnover_x_per_year": 0.11
+  },
+  "trend_spy": {
+   "from": "2017-01-03",
+   "to": "2025-11-10",
+   "total_return_pct": 113.2,
+   "cagr_pct": 8.95,
+   "vol_pct": 12.56,
+   "sharpe": 0.75,
+   "max_drawdown_pct": 25.1,
+   "turnover_x_per_year": 5.66
+  },
+  "dual_momentum": {
+   "from": "2017-01-03",
+   "to": "2025-11-10",
+   "total_return_pct": 92.32,
+   "cagr_pct": 7.68,
+   "vol_pct": 16.38,
+   "sharpe": 0.53,
+   "max_drawdown_pct": 33.79,
+   "turnover_x_per_year": 4.6
+  },
+  "sector_momentum": {
+   "from": "2017-01-03",
+   "to": "2025-11-10",
+   "total_return_pct": 94.55,
+   "cagr_pct": 7.83,
+   "vol_pct": 13.79,
+   "sharpe": 0.62,
+   "max_drawdown_pct": 23.09,
+   "turnover_x_per_year": 10.63
+  },
+  "tsmom_multi": {
+   "from": "2017-01-03",
+   "to": "2025-11-10",
+   "total_return_pct": 31.5,
+   "cagr_pct": 3.15,
+   "vol_pct": 11.04,
+   "sharpe": 0.34,
+   "max_drawdown_pct": 25.88,
+   "turnover_x_per_year": 4.83
+  },
+  "rsi2_spy": {
+   "from": "2017-01-03",
+   "to": "2025-11-10",
+   "total_return_pct": 48.81,
+   "cagr_pct": 4.6,
+   "vol_pct": 8.37,
+   "sharpe": 0.58,
+   "max_drawdown_pct": 18.14,
+   "turnover_x_per_year": 97.19
+  }
+ },
+ "to_final": []
+}
