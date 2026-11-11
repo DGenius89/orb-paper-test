@@ -1,0 +1,27 @@
+name: runup
+on:
+  workflow_dispatch:
+    inputs:
+      mode: { description: "dev of final", default: "dev" }
+permissions:
+  contents: write
+jobs:
+  runup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: python runner/runup.py ${{ inputs.mode }}
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+      - run: |
+          git config user.name "paper-bot"
+          git config user.email "paper-bot@users.noreply.github.com"
+          git add lab
+          git diff --cached --quiet || git commit -m "Runup ${{ inputs.mode }} $(date -u +%F)"
+          git pull --rebase -q origin main
+          git push
