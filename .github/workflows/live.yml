@@ -1,0 +1,21 @@
+name: live-paper
+# Every 30 min across both US-session windows (EST and EDT). Each run loops 29 min.
+on:
+  schedule:
+    - cron: "*/30 13-20 * * 1-5"
+  workflow_dispatch:
+concurrency:
+  group: live-paper
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: python runner/live.py --minutes 29
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
