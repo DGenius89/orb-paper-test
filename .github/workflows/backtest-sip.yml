@@ -1,0 +1,26 @@
+name: backtest-stocks-in-play
+on:
+  workflow_dispatch:
+    inputs:
+      months: { description: "Maanden historie", default: "12" }
+permissions:
+  contents: write
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: python runner/backtest_sip.py --months ${{ inputs.months || '12' }}
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+      - run: |
+          git config user.name "paper-bot"
+          git config user.email "paper-bot@users.noreply.github.com"
+          git add backtest-sip
+          git diff --cached --quiet || git commit -m "Backtest stocks in play $(date -u +%F)"
+          git pull --rebase -q origin main
+          git push

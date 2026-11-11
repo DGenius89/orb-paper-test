@@ -21,4 +21,5 @@ jobs:
           git config user.email "paper-bot@users.noreply.github.com"
           git add paper-log
           git diff --cached --quiet || git commit -m "Dagrapport $(date -u +%F)"
+          git pull --rebase -q origin main
           git push

@@ -28,3 +28,12 @@ niet live handelen.
 - Geen strategiewijzigingen vóór 50 live trades. Eerder bijsturen = ruis optimaliseren.
 - Stopcriteria na 100 trades of 3 maanden: netto winst na slippage **en** beter dan SPY
   kopen-en-houden over dezelfde periode. Zo niet: stoppen.
+
+## Variant: stocks in play (vooraf vastgelegd, 11 nov 2026)
+Selectie per dag zonder vooruitkijken: gap-up ≥ 2 % op de open, koers ≥ $5, gem. volume ≥ 1M;
+de 50 grootste gappers, daarvan top 20 op relatief volume in de eerste 15 minuten. Verder
+identieke regels en kosten. Uitkomst basisversie: netto −$2.253 over 756 trades vs SPY +$537.
+
+**Criterium:** PASS alleen als het out-of-sample deel netto winstgevend is **én** het hele
+jaar netto beter is dan SPY kopen-en-houden. FAIL = stoppen, geen extra tweak-rondes op
+dezelfde data.
