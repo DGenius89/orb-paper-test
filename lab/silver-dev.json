@@ -1,0 +1,201 @@
+{
+ "mode": "dev",
+ "period": [
+  "2018-01-01",
+  "2024-12-31"
+ ],
+ "rules": {
+  "cost_bps": 1.0,
+  "risk_pct": 1.0,
+  "max_leverage": 4.0
+ },
+ "skipped": {
+  "NY: eerste gap niet terug boven range": 338,
+  "PM: sweep zonder gap": 1543,
+  "PM: geen sweep": 893,
+  "NY: geen sweep": 239,
+  "NY: gap niet teruggetest": 511,
+  "PM: gap niet teruggetest": 418,
+  "NY: sweep zonder gap": 1711,
+  "PM: eerste gap niet terug boven range": 190,
+  "NY: geen data": 42,
+  "PM: geen data": 40,
+  "NY: doel niet boven instap": 7,
+  "PM: doel niet boven instap": 12
+ },
+ "all": {
+  "trades": 1172,
+  "mean_r": -0.172,
+  "t_stat": -4.08,
+  "win_rate_pct": 36.0,
+  "median_planned_rr": 2.12,
+  "exits": {
+   "close": 114,
+   "stop": 711,
+   "target": 347
+  },
+  "equity_total_return_pct": -73.9,
+  "equity_max_drawdown_pct": 74.2
+ },
+ "by_window": {
+  "NY": {
+   "trades": 710,
+   "mean_r": -0.069,
+   "t_stat": -1.28,
+   "win_rate_pct": 40.1,
+   "median_planned_rr": 1.74,
+   "exits": {
+    "stop": 417,
+    "target": 276,
+    "close": 17
+   },
+   "equity_total_return_pct": -36.0,
+   "equity_max_drawdown_pct": 37.6
+  },
+  "PM": {
+   "trades": 462,
+   "mean_r": -0.33,
+   "t_stat": -4.95,
+   "win_rate_pct": 29.7,
+   "median_planned_rr": 2.97,
+   "exits": {
+    "close": 97,
+    "stop": 294,
+    "target": 71
+   },
+   "equity_total_return_pct": -59.2,
+   "equity_max_drawdown_pct": 59.5
+  }
+ },
+ "by_side": {
+  "long": {
+   "trades": 563,
+   "mean_r": -0.078,
+   "t_stat": -1.31,
+   "win_rate_pct": 40.7,
+   "median_planned_rr": 1.98,
+   "exits": {
+    "stop": 314,
+    "target": 183,
+    "close": 66
+   },
+   "equity_total_return_pct": -29.1,
+   "equity_max_drawdown_pct": 31.2
+  },
+  "short": {
+   "trades": 609,
+   "mean_r": -0.259,
+   "t_stat": -4.34,
+   "win_rate_pct": 31.7,
+   "median_planned_rr": 2.3,
+   "exits": {
+    "close": 48,
+    "stop": 397,
+    "target": 164
+   },
+   "equity_total_return_pct": -63.1,
+   "equity_max_drawdown_pct": 63.4
+  }
+ },
+ "by_year": {
+  "2018": {
+   "trades": 205,
+   "mean_r": -0.233,
+   "t_stat": -2.35,
+   "win_rate_pct": 33.7,
+   "median_planned_rr": 1.99,
+   "exits": {
+    "close": 22,
+    "stop": 132,
+    "target": 51
+   },
+   "equity_total_return_pct": -24.3,
+   "equity_max_drawdown_pct": 27.3
+  },
+  "2019": {
+   "trades": 181,
+   "mean_r": -0.197,
+   "t_stat": -1.94,
+   "win_rate_pct": 35.9,
+   "median_planned_rr": 2.25,
+   "exits": {
+    "stop": 106,
+    "target": 58,
+    "close": 17
+   },
+   "equity_total_return_pct": -16.6,
+   "equity_max_drawdown_pct": 21.2
+  },
+  "2020": {
+   "trades": 167,
+   "mean_r": 0.063,
+   "t_stat": 0.49,
+   "win_rate_pct": 39.5,
+   "median_planned_rr": 2.56,
+   "exits": {
+    "target": 54,
+    "close": 16,
+    "stop": 97
+   },
+   "equity_total_return_pct": 6.9,
+   "equity_max_drawdown_pct": 15.8
+  },
+  "2021": {
+   "trades": 170,
+   "mean_r": -0.281,
+   "t_stat": -2.63,
+   "win_rate_pct": 32.4,
+   "median_planned_rr": 2.07,
+   "exits": {
+    "stop": 107,
+    "target": 47,
+    "close": 16
+   },
+   "equity_total_return_pct": -23.4,
+   "equity_max_drawdown_pct": 23.4
+  },
+  "2022": {
+   "trades": 146,
+   "mean_r": -0.186,
+   "t_stat": -1.54,
+   "win_rate_pct": 32.9,
+   "median_planned_rr": 2.46,
+   "exits": {
+    "close": 11,
+    "stop": 95,
+    "target": 40
+   },
+   "equity_total_return_pct": -23.9,
+   "equity_max_drawdown_pct": 29.8
+  },
+  "2023": {
+   "trades": 150,
+   "mean_r": -0.145,
+   "t_stat": -1.18,
+   "win_rate_pct": 38.7,
+   "median_planned_rr": 1.72,
+   "exits": {
+    "stop": 89,
+    "target": 49,
+    "close": 12
+   },
+   "equity_total_return_pct": -17.1,
+   "equity_max_drawdown_pct": 19.4
+  },
+  "2024": {
+   "trades": 153,
+   "mean_r": -0.21,
+   "t_stat": -2.04,
+   "win_rate_pct": 39.9,
+   "median_planned_rr": 1.77,
+   "exits": {
+    "target": 48,
+    "stop": 85,
+    "close": 20
+   },
+   "equity_total_return_pct": -20.0,
+   "equity_max_drawdown_pct": 24.6
+  }
+ },
+ "verdict": "FAIL"
+}
