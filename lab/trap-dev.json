@@ -1,0 +1,163 @@
+{
+ "mode": "dev",
+ "period": [
+  "2018-01-01",
+  "2024-12-31"
+ ],
+ "rules": {
+  "cost_bps": 1.0,
+  "risk_pct": 1.0,
+  "max_leverage": 4.0
+ },
+ "symbol_days": 3558,
+ "skipped": {
+  "geen trap": 1187,
+  "trap zonder gap": 523,
+  "gap niet teruggetest": 197,
+  "geen bias": 46
+ },
+ "all": {
+  "trades": 1605,
+  "mean_r": -0.232,
+  "t_stat": -5.55,
+  "win_rate_pct": 29.9,
+  "median_planned_rr": 2.62,
+  "exits": {
+   "stop": 1119,
+   "target": 457,
+   "close": 29
+  },
+  "equity_total_return_pct": -83.6,
+  "equity_max_drawdown_pct": 84.4
+ },
+ "long": {
+  "trades": 811,
+  "mean_r": -0.208,
+  "t_stat": -3.78,
+  "win_rate_pct": 33.3,
+  "median_planned_rr": 2.35,
+  "exits": {
+   "target": 258,
+   "stop": 541,
+   "close": 12
+  },
+  "equity_total_return_pct": -54.3,
+  "equity_max_drawdown_pct": 56.9
+ },
+ "short": {
+  "trades": 794,
+  "mean_r": -0.258,
+  "t_stat": -4.07,
+  "win_rate_pct": 26.4,
+  "median_planned_rr": 3.0,
+  "exits": {
+   "stop": 578,
+   "target": 199,
+   "close": 17
+  },
+  "equity_total_return_pct": -64.0,
+  "equity_max_drawdown_pct": 68.3
+ },
+ "by_year": {
+  "2018": {
+   "trades": 238,
+   "mean_r": -0.072,
+   "t_stat": -0.61,
+   "win_rate_pct": 31.5,
+   "median_planned_rr": 2.83,
+   "exits": {
+    "stop": 162,
+    "target": 75,
+    "close": 1
+   },
+   "equity_total_return_pct": -20.3,
+   "equity_max_drawdown_pct": 20.6
+  },
+  "2019": {
+   "trades": 225,
+   "mean_r": -0.308,
+   "t_stat": -2.87,
+   "win_rate_pct": 30.7,
+   "median_planned_rr": 2.57,
+   "exits": {
+    "stop": 156,
+    "target": 63,
+    "close": 6
+   },
+   "equity_total_return_pct": -11.9,
+   "equity_max_drawdown_pct": 24.4
+  },
+  "2020": {
+   "trades": 241,
+   "mean_r": -0.272,
+   "t_stat": -2.67,
+   "win_rate_pct": 29.5,
+   "median_planned_rr": 2.68,
+   "exits": {
+    "stop": 169,
+    "target": 68,
+    "close": 4
+   },
+   "equity_total_return_pct": -29.2,
+   "equity_max_drawdown_pct": 35.7
+  },
+  "2021": {
+   "trades": 227,
+   "mean_r": -0.407,
+   "t_stat": -4.05,
+   "win_rate_pct": 27.8,
+   "median_planned_rr": 2.75,
+   "exits": {
+    "stop": 163,
+    "target": 58,
+    "close": 6
+   },
+   "equity_total_return_pct": -31.4,
+   "equity_max_drawdown_pct": 33.8
+  },
+  "2022": {
+   "trades": 226,
+   "mean_r": -0.221,
+   "t_stat": -1.99,
+   "win_rate_pct": 28.8,
+   "median_planned_rr": 2.54,
+   "exits": {
+    "stop": 160,
+    "target": 60,
+    "close": 6
+   },
+   "equity_total_return_pct": -27.6,
+   "equity_max_drawdown_pct": 27.6
+  },
+  "2023": {
+   "trades": 211,
+   "mean_r": -0.181,
+   "t_stat": -1.48,
+   "win_rate_pct": 28.4,
+   "median_planned_rr": 2.59,
+   "exits": {
+    "target": 60,
+    "stop": 150,
+    "close": 1
+   },
+   "equity_total_return_pct": -23.1,
+   "equity_max_drawdown_pct": 25.1
+  },
+  "2024": {
+   "trades": 237,
+   "mean_r": -0.171,
+   "t_stat": -1.51,
+   "win_rate_pct": 32.5,
+   "median_planned_rr": 2.44,
+   "exits": {
+    "stop": 159,
+    "target": 73,
+    "close": 5
+   },
+   "equity_total_return_pct": -13.5,
+   "equity_max_drawdown_pct": 23.2
+  }
+ },
+ "spy_buy_hold_pct": 144.0,
+ "verdict": "FAIL"
+}
